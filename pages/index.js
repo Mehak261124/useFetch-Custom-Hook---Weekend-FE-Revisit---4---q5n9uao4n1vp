@@ -9,7 +9,7 @@ function Home() {
 
   return (
     <div>
-      <h1>Products</h1>
+      <h1>Movies</h1>
       {/* {document.write(data)} */}
       <ul>
       {data && data.map(item => (
