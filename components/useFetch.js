@@ -6,6 +6,9 @@ const useFetch = (url) => {
   const [error,setError] = useState(null);
 
   useEffect(() => {
+    setIsLoading(true);
+    setError(null);
+    setIsLoading(false);
     fetch(url).then(response => {
       if(!response.ok){
         throw Error('could not fetch the data for that resource');
